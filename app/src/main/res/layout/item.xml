@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            card_view:fontFamily="@font/roboto_mono_bold" />
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            card_view:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/textView_numPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            card_view:fontFamily="@font/roboto" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

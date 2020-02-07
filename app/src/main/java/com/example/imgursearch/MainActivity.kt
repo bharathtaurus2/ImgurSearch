@@ -211,7 +211,7 @@ class MainActivity : AppCompatActivity() {
 
                     for (i in 0..items.length()) {
                         val item: JSONObject = items.getJSONObject(i)
-                        val photo: Photo = Photo()
+                        val photo = Photo()
                         if (item.getBoolean("is_album")) {
                             photo.id = item.getString("cover")
                             photo.numImages = item.getInt("images_count")
@@ -242,7 +242,7 @@ class MainActivity : AppCompatActivity() {
         companion object {
             val clientID = "Client-ID " + BuildConfig.CLIENT_ID
             const val baseImageUrl = "https://i.imgur.com/"
-            const val baseSearchUrl = "https://api.imgur.com/3/gallery/search/week/?q="
+            const val baseSearchUrl = "https://api.imgur.com/3/gallery/search/top/week/?q="
         }
     }
 }

@@ -15,7 +15,7 @@ The application's features are described below:
   - If toggle is enabled, the app will only display results where the sum of “points”, “score” and “topic_id” of the post adds up to an even number
   - If the toggle is disabled, the app will display all results.
  
-### Instructions on using the app:
+### Instructions on syncing and building the project:
 * Clone the project using git or download a zip file of the project and open it in Android Studio.
 * The external Libraries used in the project are below:
   - Picasso: com.squareup.picasso:picasso:2.71828
